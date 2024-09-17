@@ -1,0 +1,46 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>450</x><y>620</y><w>210</w><h>310</h></coordinates><panel_attributes>&lt;&lt;Employee&gt;&gt;
+
+--
+-empID: int
+-firstName: String
+-lastName: String
+--
++Employee()
++Employee(int, String, String)
++getID(): int
++getFirstName(): String
++getLastName(): String
++setID(int): void
++setFirstName(String): void
++setLastName(String): void
++toString(): String
+--
+Responsibilities
+--Stores individual
+  Employee data into Strings</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>190</y><w>230</w><h>290</h></coordinates><panel_attributes>&lt;&lt;EmployeeList&gt;&gt;
+
+--
+-Scanner: fileScanner
+-Scanner: terminalScanner
+_-ArrayList&lt;Employee&gt;: empList_
+--
++EmployeeList()
+-pause(): void
+-getValidID(): String
+-formatID(): String
+-searchList(): Employee
++addEmp(): void
++findEmp(): Employee
+--
+Responsibilities
+-- Creates instances of employees
+    by reading accompanied text file
+--Stores employees in list
+   and allows for user configuration</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>170</y><w>210</w><h>190</h></coordinates><panel_attributes>EmployeeApp
+--
++main(String[]): void
+--
+Responsibilities
+-- Contains main method; calls 
+    EmployeeList constructor
+*-- Provides user with config menu*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>470</y><w>100</w><h>170</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;150;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>270</y><w>220</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>200;10;10;10</additional_attributes></element></diagram>
