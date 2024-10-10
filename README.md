@@ -1,6 +1,6 @@
 # North Island College Projects!
 In this repository are several projects/assignments I created during my time at North Island College!
-## Some projcets include:
+## Some projects include:
 - Employee management system
 - LinkedList Architectures
 - Linked Lists which insert new nodes according to their data, allowing for order
